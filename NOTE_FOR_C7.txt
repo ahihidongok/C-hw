@@ -1,0 +1,62 @@
+CSE 1320 04/25 CODING ASSIGNMENT 7 
+—File handling: 
+- Queue = cat.txt 
+- one name per line, has space so have to use fgets not scanf 
+- read those name in and put in queue 
+—Queue: 
+- put the read in file into each queue 
+- put in a char[30] SIZE 30
+-  dequeue to know who is the customer 
+- ask the customer : Which theater 
+- go find the theater 
+- finding your node by file name and dim
+- filename is just a set of x  and o 
+- so it’s will we ooooooo at the begining becuase no seat are sold 
+- use 2 for loop for (0->10) for (0->9)
+- as you sell the tickets, add to the linked list of your stack, do not use array to save it in because you are limiting the number of tickets customer can buy 
+- sold seat will be written back into the file 
+- so when the next customer came in, they can see the sold seats 
+- 
+— BST (Binary search tree) 
+- Read in a ZIPFILE 
+- read in the movie 
+- name [30]
+- zipcode [5] 
+- file name [100] 
+- dim num [7] 
+- ***Leave a space for \0 terminate, else it will print till it hits \0 
+- put in the binary search tree by zipcode 
+- check to see if greater than or less then … 
+- each node of the BST will have the name, zipcode, filename, dim num
+— STACK: 
+- Each node of stack will have receipt num, LLH of tickets 
+- Each receipt number will be different and increasement
+-  
+- print receipt
+- if st == null 
+- print empty 
+- else 
+- while(ST != NULL) 
+- print the list of tickets 
+- 1 while loop per ticket 
+- add another while loop (ST -> ticket list != NULL) (WALK THROUGH THE LIST OF TICKET INSIDE MY STACK) 
+- if the while loop is executed, Return AddFreeLinkedListNode( LLH, ticket) 
+- *read linked list, pull out ticket and print it back to you 
+- Function free a head and return the LLH point to the next node 
+- 
+— LINKED LIST 
+- A1 A2 A3 tickets 
+- Linked list when put into should be sorted 
+- 
+STEP 1: Read in a queue, read each line, save in a queue by using char[3]
+STEP 2: Create the BST 
+STEP 3 : Sell, see who’s in the line seat map print receipt 
+The code need to split into different library 
+
+
+I have updated the QueueLib.h and BSTLib.h to show which functions print and what they print.  If the comments with the function header do not list a print statement, then they do not print.
+
+If the seat map file length (number of X's and O's) does not exactly match the dimensions provided in the file, then the file is invalid and that theater's seat map cannot be displayed and the customer should pick a different theater.
+
+Your program ends when the queue is empty.  All customers must be served before your job is done.
+
